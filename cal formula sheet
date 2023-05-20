@@ -1,0 +1,82 @@
+\documentclass[letterpaper]{article}
+\usepackage[margin=1.5cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+\textbf{\LARGE Calculus 2 Final Exam Formula Sheet}
+\end{center}
+
+\section*{Riemann Sums}
+\begin{itemize}
+\item Left Riemann Sum: $L_n = \frac{b-a}{n}\sum_{i=0}^{n-1}f(a+i\Delta x)$
+\item Right Riemann Sum: $R_n = \frac{b-a}{n}\sum_{i=1}^{n}f(a+i\Delta x)$
+\item Midpoint Riemann Sum: $M_n = \frac{b-a}{n}\sum_{i=1}^{n}f(a+\frac{(2i-1)\Delta x}{2})$
+\item Trapezoidal Rule: $T_n = \frac{b-a}{2n}[f(a) + 2f(a+\Delta x) + 2f(a+2\Delta x) + \ldots + 2f(b-\Delta x) + f(b)]$
+\end{itemize}
+
+\section*{Fundamental Theorem of Calculus}
+\begin{itemize}
+\item First Part: $\int_{a}^{b} f(x) \, dx = F(b) - F(a)$
+\item Second Part: $\frac{d}{dx} \left(\int_{a}^{x} f(t) \, dt\right) = f(x)$
+\end{itemize}
+
+\section*{Techniques of Integration}
+\begin{itemize}
+\item Integration by Substitution: $\int f(g(x)) \cdot g'(x) \, dx = \int f(u) \, du$
+\item Integration by Parts: $\int u \, dv = uv - \int v \, du$
+\item Partial Fractions: $\frac{P(x)}{Q(x)} = \frac{A}{a_1x + b_1} + \frac{B}{a_2x + b_2} + \ldots$
+\end{itemize}
+
+\section*{Areas and Volumes}
+\begin{itemize}
+\item Area between curves: $A = \int_{a}^{b} (f(x) - g(x)) \, dx$
+\item Volume of revolution (disk method): $V = \pi \int_{a}^{b} (f(x))^2 \, dx$
+\item Volume of revolution (shell method): $V = 2\pi \int_{a}^{b} x \cdot f(x) \, dx$
+\end{itemize}
+
+\section*{Differential Equations}
+\begin{itemize}
+\item Separation of Variables: $\frac{dy}{dx} = g(x)h(y)$
+\item Exponential Growth/Decay: $y = Ce^{kt}$
+\item Logistic Growth: $y = \frac{ak}{1+be^{-kt}}$
+\end{itemize}
+
+\newpage
+
+\section*{Sequences}
+\begin{itemize}
+\item Arithmetic Sequence: $a_n = a_1 + (n-1)d$
+\item Geometric Sequence: $a_n = a_1 \cdot r^{(n-1)}$
+\item Arithmetic Series: $S_n = \frac{n}{2}(a_1 + a_n)$
+\item Geometric Series: $S_n = \frac{a_1(r^n - 1)}{r-1}$ (if $|r| < 1$)
+\end{itemize}
+
+\section*{Series Convergence Tests}
+\begin{itemize}
+\item Divergence Test: If $\lim_{n\to\infty}a_n \neq 0$, then the series $\sum_{n=1}^{\infty} a_n$ diverges.
+\item Geometric Series Test: $\sum_{n=1}^{\infty} ar^{(n-1)} = \frac{a}{1-r}$ (if $|r| < 1$)
+\item Integral Test: If $\int_{1}^{\infty} f(x) \, dx$ converges, then $\sum_{n=1}^{\infty} f(n)$ converges.
+\item Comparison Test: If $0 \leq a_n \leq b_n$ for all $n$, and $\sum_{n=1}^{\infty} b_n$ converges, then $\sum_{n=1}^{\infty} a_n$ converges.
+\item Alternating Series Test: If $a_n > 0$, $a_n \geq a_{n+1}$, and $\lim_{n\to\infty}a_n = 0$, then $\sum_{n=1}^{\infty} (-1)^{n-1}a_n$ converges.
+\end{itemize}
+
+\section*{Telescoping Sums}
+\begin{itemize}
+\item Telescoping Sum: $\sum_{n=1}^{N}(a_n - a_{n+1}) = a_1 - a_{N+1}$
+\end{itemize}
+
+\section*{Power Series}
+\begin{itemize}
+\item Power Series: $\sum_{n=0}^{\infty} c_n(x-a)^n$
+\item Radius of Convergence: $R = \frac{1}{\limsup_{n\to\infty}\sqrt[n]{|c_n|}}$
+\end{itemize}
+
+\section*{Taylor and Maclaurin Series}
+\begin{itemize}
+\item Maclaurin Series: $f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}x^n$
+\item Taylor Series: $f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n$
+\end{itemize}
+
+\end{document}
